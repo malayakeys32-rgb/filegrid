@@ -20,8 +20,8 @@ const C = {
   white: "#e8f4ff",
 };
 
-const glow = (color, size = 8) => `0 0 ${size}px ${color}44, 0 0 ${size * 2}px ${color}22`;
-const glowStrong = (color) => `0 0 12px ${color}88, 0 0 24px ${color}44, 0 0 48px ${color}22`;
+const glow = (color: string, size = 8): string => `0 0 ${size}px ${color}44, 0 0 ${size * 2}px ${color}22`;
+const glowStrong = (color: string): string => `0 0 12px ${color}88, 0 0 24px ${color}44, 0 0 48px ${color}22`;
 
 // ─── SHARED COMPONENTS ───────────────────────────────────────────────────────
 
