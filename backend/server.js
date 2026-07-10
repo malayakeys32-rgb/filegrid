@@ -1,22 +1,19 @@
 import express from "express";
 import dotenv from "dotenv";
-dotenv.
-config();
+
+dotenv.config();
 
 const app = express();
-
-// Middleware
 app.use(express.json());
 
-// Basic test route
+// Test route so Render shows "Healthy"
 app.get("/", (req, res) => {
-  res.json({ message: "Sentinel-Black backend is running" });
+  res.json({ message: "FileGrid backend running" });
 });
 
 // Render requires this:
 const PORT = process.env.PORT || 10000;
 
 app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
+  console.log(`Backend running on port ${PORT}`);
 });
-
